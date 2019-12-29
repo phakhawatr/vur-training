@@ -48,12 +48,22 @@ import axios from 'axios'
 export default {
     methods: {
         async getUsers() {
-            
+        try {  
             const res = await axios.get('https://jsonplaceholder.typicode.com/users')
-            this.users = res.data
+            this.updateUsers(res.data)
+        } catch (e) {
+            // console.log(e.message)
         }
+        },
+        updateUsers(data) {
+            this.$store.commit('updateUsers' , data)
+        }
+
     },
     computed: {
+        users() {
+            return this.$store.state.users
+        },
         filterUsers() {
             const pattern = new RegExp(this.query, 'i')
             
@@ -67,7 +77,7 @@ export default {
     },
     data() {
         return {
-            users: [],
+            // users: [],
             query: ''
         }
     }

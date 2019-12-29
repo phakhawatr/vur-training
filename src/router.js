@@ -6,6 +6,8 @@ import Photo from './views/Photo'
 import User from './views/User'
 import VueRouter from 'vue-router'
 import Userprofile from './views/Userprofile'
+import Search from './views/Search'
+import Props from './views/Props'
 
 const routes = [
     {
@@ -27,8 +29,15 @@ const routes = [
         path: '/User', component: User
     },
     {
+        path: '/Search', component: Search
+    },
+    {
+        path: '/Props', component: Props
+    },
+    {
         path: '/User/:id', component: Userprofile
     }
+
 ]
 
 const router = new VueRouter({

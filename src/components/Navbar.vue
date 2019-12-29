@@ -65,6 +65,14 @@ export default {
                     to: '/photo',
                     text: 'Photo'
                 },
+                 {
+                    to: '/Search',
+                    text: 'Search'
+                },
+                {
+                    to: '/Props',
+                    text: 'Props'
+                },
                 {
                     to: '/user',
                     text: 'User'
