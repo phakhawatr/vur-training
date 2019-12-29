@@ -3,7 +3,7 @@
     <section class="section">
       <div class="container">
         <navbar />
-        <h1 class="title">App</h1>
+        <h1 class="title">Application Online</h1>
         <router-view />
         </div>
     </section>

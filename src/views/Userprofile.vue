@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 class="title">User Profile</h1>
+        <h1 class="title">User Profile Detail</h1>
         <h2>id : {{ user.id}}</h2>
         <h2>name : {{ user.name}}</h2>
         <h2>email : {{ user.email}}</h2>
